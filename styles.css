@@ -1,0 +1,258 @@
+body {
+  font-family: "Bodoni Moda";
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.socials-bar {
+  width: 100%;
+  background-color: #7ec595;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-link {
+  font-size: 0.8rem; /* Adjust the font size as needed */
+  margin-right: 5px; /* Space between text and images */
+  color: black; /* Adjust the text color if needed */
+  font-weight: lighter;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.centered-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.centered-images img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.navbar {
+  background-color: #7ec595;
+}
+
+.navbar-brand {
+  font-size: 500;
+  color: #4d4d4d;
+  font-variant-east-asian: simplified;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: #4d4d4d; /* Ensure it inherits the color */
+}
+
+/* Nav Link */
+.nav-link {
+  align-items: center;
+  color: #5e5e5e;
+}
+
+.nav-link:hover {
+  color: #7ec595;
+}
+
+.nav-link.selected::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 4px;
+  background-color: #7ec595;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 2px;
+  align-items: left;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Apply bounce on hover */
+.nav-link.selected:hover::after {
+  animation: bounce 1s;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* Ensures the content doesn't get too wide */
+}
+
+.overlay-content h1 {
+  font-size: 3.5em;
+  margin: 10px 0;
+}
+
+.overlay-content p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.overlay-content .btn {
+  padding: 10px 20px;
+  font-size: 1em;
+}
+
+@media (max-width: 992px) {
+  .ethos-text {
+    font-size: small;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-content {
+    width: 90%;
+    padding: 10px;
+    top: 50%;
+  }
+
+  .overlay-content h1 {
+    font-size: 3em;
+  }
+
+  .overlay-content p {
+    font-size: 0.9em;
+  }
+
+  .overlay-content .btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .nav-link.selected::after {
+    width: 100%;
+    border-radius: 4px;
+    height: 3.2px;
+  }
+
+  .ethos-text {
+    font-size: small;
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  .overlay-content {
+    width: 95%;
+    padding: 5px;
+    top: 50%;
+  }
+
+  .overlay-content h1 {
+    font-size: 2em;
+  }
+
+  .overlay-content p {
+    font-size: 0.8em;
+  }
+
+  .overlay-content .btn {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+  .nav-link.selected::after {
+    width: 100%;
+    border-radius: 4px;
+    height: 3.2px;
+  }
+
+  .nav-link {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .ethos-text {
+    font-size: small;
+  }
+}
+
+.form-control:focus {
+  border-color: #7ec595; /* Custom border color */
+  box-shadow: 0 0 5px rgb(126, 197, 149, 0.9); /* Optional: Add a custom shadow */
+  outline: none; /* Remove default outline */
+}
+
+.card-text {
+  font-weight: 300;
+}
+
+#contact-info {
+  margin: 0px 0;
+}
+
+#customButton {
+  color: rgb(0, 0, 0); /* Blue color */
+  border-color: rgb(0, 0, 0); /* Blue color for the border */
+  background-color: white;
+  border-width: 2px;
+}
+
+#customButton:hover {
+  background-color: #7ec595; /* Blue background color on hover */
+  color: white; /* Text color on hover */
+}
+
+.booking-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-underline {
+  position: relative;
+  display: inline-block;
+}
+.text-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.5px;
+  bottom: -1.1px;
+  left: 0;
+  background-color: #7ec595;
+  /* transform: translateX(10%); */
+  border-radius: 5px;
+}
+
+#close {
+  margin: 2px 0;
+}
+
+.image-container {
+  height: 66.67%; /* Set the container height to 66.67% to show two-thirds of the image */
+  overflow: hidden; /* Hide overflow to cut off the bottom part of the image */
+  position: relative;
+}
