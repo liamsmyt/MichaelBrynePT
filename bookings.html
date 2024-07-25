@@ -181,6 +181,40 @@
 
     <footer class="text-center py-3 footer mx-5">&copy; LSWebDesign.</footer>
 
+    <!-- Email -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "s9rzVLXQpGe6OtH34",
+        });
+      })();
+    </script>
+
+    <script>
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
+
+          const serviceID = "service_p4itvhl"; // Use default service ID
+          const templateID = "service_p4itvhl"; // Replace with your template ID
+
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              alert("Booking request sent!");
+            },
+            (err) => {
+              alert("Failed to send request.\n " + JSON.stringify(err));
+            }
+          );
+        });
+    </script>
+
+    <!-- Browser Notification  -->
     <script>
       // JavaScript to handle form submission and show notification
       document
