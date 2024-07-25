@@ -200,14 +200,27 @@
         .addEventListener("submit", function (event) {
           event.preventDefault(); // Prevent default form submission
 
-          const serviceID = "service_p4itvhl"; // Use default service ID
-          const templateID = "template_ntyew3o"; // Replace with your template ID
+          const serviceID = "service_p4itvhl"; // Your service ID
+          const templateID = "template_ntyew3o"; // Your template ID
 
-          emailjs.sendForm(serviceID, templateID, this).then(
+          // Collect form data
+          const params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            date: document.getElementById("date").value,
+            time: document.getElementById("time").value,
+            message: document.getElementById("message").value,
+          };
+
+          // Send email with parameters
+          emailjs.send(serviceID, templateID, params).then(
             () => {
               alert("Booking request sent!");
+              this.reset(); // Reset the form after submission
             },
             (err) => {
+              console.error("Failed to send request.", err);
               alert("Failed to send request.\n " + JSON.stringify(err));
             }
           );
