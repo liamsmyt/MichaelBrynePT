@@ -123,6 +123,10 @@ body {
   font-size: 1em;
 }
 
+.ethos-text {
+  font-weight: 350;
+}
+
 @media (max-width: 992px) {
   .ethos-text {
     font-size: small;
@@ -200,10 +204,6 @@ body {
   border-color: #7ec595; /* Custom border color */
   box-shadow: 0 0 5px rgb(126, 197, 149, 0.9); /* Optional: Add a custom shadow */
   outline: none; /* Remove default outline */
-}
-
-.card-text {
-  font-weight: 300;
 }
 
 #contact-info {
