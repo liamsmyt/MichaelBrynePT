@@ -189,7 +189,7 @@
     <script type="text/javascript">
       (function () {
         emailjs.init({
-          publicKey: "s9rzVLXQpGe6OtH34",
+          publicKey: "LiRwygA2lBvcrw_3E",
         });
       })();
     </script>
@@ -200,8 +200,8 @@
         .addEventListener("submit", function (event) {
           event.preventDefault(); // Prevent default form submission
 
-          const serviceID = "service_dnrymuc"; // Your service ID
-          const templateID = "template_ntyew3o"; // Your template ID
+          const serviceID = "service_u8aih1a"; // Your service ID
+          const templateID = "template_qj62su8"; // Your template ID
 
           // Collect form data
           const params = {
@@ -216,7 +216,9 @@
           // Send email with parameters
           emailjs.send(serviceID, templateID, params).then(
             () => {
-              alert("Booking request sent!");
+              alert(
+                "Booking request sent! Keep an eye on your email for confirmation"
+              );
               this.reset(); // Reset the form after submission
             },
             (err) => {
@@ -224,22 +226,6 @@
               alert("Failed to send request.\n " + JSON.stringify(err));
             }
           );
-        });
-    </script>
-
-    <!-- Browser Notification  -->
-    <script>
-      // JavaScript to handle form submission and show notification
-      document
-        .getElementById("bookingForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevents the default form submission behavior
-
-          // Display the notification
-          alert("Keep an eye on your email for session confirmation!");
-
-          // Optional: Reset the form fields after submission
-          this.reset();
         });
     </script>
 

@@ -9,9 +9,12 @@
     <link href="styles.css" rel="stylesheet" />
     <!-- Google Font -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -32,120 +35,180 @@
       content="https://liamsmyt.github.io/MichaelByrnePT/media/MichaelBUncropped.jpg"
     />
     <meta property="og:title" content="Michael Byrne PT" />
-    <meta name="description" content="Personal Training Dublin">
-    <meta property="og:description" content="Personal Training Dublin">
+    <meta name="description" content="Personal Training Dublin" />
+    <meta property="og:description" content="Personal Training Dublin" />
   </head>
   <body class="bg-light">
     <!-- Navbar to contain socials -->
     <div class="socials-bar sticky-top">
-      <a href="https://www.instagram.com/michaelbyrnept/" class="socials-link">@MichaelByrnePT</a>
+      <a href="https://www.instagram.com/michaelbyrnept/" class="socials-link"
+        >@MichaelByrnePT</a
+      >
       <div class="centered-images">
         <a href="https://www.instagram.com/michaelbyrnept/">
-          <img src="media/instagramLogo.png" alt="Instagram" width="35" height="35"/>
+          <img
+            src="media/instagramLogo.png"
+            alt="Instagram"
+            width="35"
+            height="35"
+          />
         </a>
       </div>
     </div>
-    
-  <!-- Minimalistic Navbar -->
-  <nav class="navbar navbar-expand-lg p-0 bg-light sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img
-          src="media/MichaelBUncropped.jpg"
-          alt="Brand Logo"
-          width="50"
-          height="50"
-          class="d-inline-block align-text-middle ms-2 rounded"
-        /><span class="d-inline-block mx-3 align-text-middle fw-lighter">Michael Byrne PT</span>
-      </a>
-      <button
-        class="navbar-toggler mx-2"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav mx-1">
-          <a class="nav-link" href="index.html"
-            >Home</a
-          >
-          <a class="nav-link" href="about.html">About</a>
-          <a class="nav-link selected" aria-current="page" href="contact.html">Contact</a>
-          <a class="nav-link" href="bookings.html">Bookings</a>
-        </div>
 
-        <a
-          class="btn ms-auto mx-1 d-none d-lg-block fs-md"
-          id="customButton"
-          href="about.html"
-          >Read Client Testimonies</a>
+    <!-- Minimalistic Navbar -->
+    <nav class="navbar navbar-expand-lg p-0 bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="media/MichaelBUncropped.jpg"
+            alt="Brand Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-middle ms-2 rounded"
+          /><span class="d-inline-block mx-3 align-text-middle fw-lighter"
+            >Michael Byrne PT</span
+          >
+        </a>
+        <button
+          class="navbar-toggler mx-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-1">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link selected" aria-current="page" href="contact.html"
+              >Contact</a
+            >
+            <a class="nav-link" href="bookings.html">Bookings</a>
+          </div>
+
+          <a
+            class="btn ms-auto mx-1 d-none d-lg-block fs-md"
+            id="customButton"
+            href="about.html"
+            >Read Client Testimonies</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row mx-1 mt-5">
+        <div class="col-lg-12">
+          <div class="bg-light rounded p-4 shadow">
+            <h2 class="text-center">Get In Touch</h2>
+            <p class="lead text-center">Got any questions or enquiries?</p>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="contactName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactName"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contactEmail" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="contactEmail"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="contactMessage"
+                  name="message"
+                  rows="3"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn" id="customButton">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-<!-- Contact Element -->
-<div class="row mx-1 mt-5">
-    <div class="col-lg-12">
-        <div class="bg-light rounded p-4 shadow">
-            <h2 class="text-center">Get In Touch</h2>
-            <p class="lead text-center">Got any questions or enquiries?</p> 
-            <form id="contactForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                    
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
-                </div>
-                <button type="submit" class="btn" id="customButton">Submit</button>
-            </form>
-        </div>
-    </div>
-</div>
-</div>
+    <footer class="text-center py-3 footer mx-5">&copy; LSWebDesign.</footer>
 
-<footer class="text-center py-3 footer mx-5">
-  &copy; LSWebDesign.
-</footer>
+    <!-- EmailJS Script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "LiRwygA2lBvcrw_3E", // Your public key
+        });
+      })();
+    </script>
 
-<script>
-  // JavaScript to handle form submission and show notification
-  document
-    .getElementById("contactForm")
-    .addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevents the default form submission behavior
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent default form submission
 
-      // Display the notification
-      alert("Thanks for your message I'll get back to you as soon as possible!");
+          const serviceID = "service_u8aih1a"; // Your service ID
+          const templateID = "template_a77o2dp"; // Your contact form template ID
 
-      // Optional: Reset the form fields after submission
-      this.reset();
-    });
-</script>
+          // Collect form data
+          const params = {
+            name: document.getElementById("contactName").value,
+            email: document.getElementById("contactEmail").value,
+            message: document.getElementById("contactMessage").value,
+          };
 
-<!-- Bootstrap -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-crossorigin="anonymous"
-></script>
+          // Send email with parameters
+          emailjs.send(serviceID, templateID, params).then(
+            () => {
+              alert("Message sent! I'll get back to you soon.");
+              this.reset(); // Reset the form after submission
+            },
+            (err) => {
+              console.error("Failed to send message.", err);
+              alert("Failed to send message.\n " + JSON.stringify(err));
+            }
+          );
+        });
+    </script>
 
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-<script>
-AOS.init();
-</script>
-</body>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
